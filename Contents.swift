@@ -24,3 +24,24 @@ let pursuitMessage = #""Welcome to Pursuit's \#(programmingLanguage) 6.0 cohort"
 print(message)
 
 print(pursuitMessage)
+
+//================================================================
+// Character Properties
+//================================================================
+
+// present emoji keyboard - control, command + space bar
+let sentence = "1$🔥&4?ap*"
+for char in sentence {
+    if char.isLetter {
+        print("letter: \(char)")
+    }
+    if char.isCurrencySymbol {
+        print("currency symbol: \(char)")
+    }
+    if char.isSymbol {
+        print("symbol: \(char)")
+    }
+    if char.isPunctuation{
+        print("punctuation: \(char)")
+    }
+}
